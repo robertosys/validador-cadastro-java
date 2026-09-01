@@ -1,5 +1,5 @@
 public class validador {
-    void cpfval(String CPF){
+      protected   void cpfval(String CPF){
         int resultado = 0;
         int mult = 11;
         int verificador = 0;
@@ -61,7 +61,7 @@ public class validador {
 
 
     }
-    void numeroval(String telefone){
+    protected   void numeroval(String telefone){
         if(telefone.length() == 11 ){
 
             System.out.println("numero valido.");
@@ -71,7 +71,7 @@ public class validador {
         }
 
     }
-    void nomeval(String nome){
+    protected   void nomeval(String nome){
         if(nome.length() > 30){
             System.out.println("nome comprido da peste, abrevia ai");
         }else if(nome.length() < 2){
