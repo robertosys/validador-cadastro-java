@@ -1,5 +1,5 @@
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         login pessoa1 = new login();
         pessoa1.cadastro();
         validador val = new validador();
