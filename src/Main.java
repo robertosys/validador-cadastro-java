@@ -3,9 +3,9 @@ public class Main {
         login pessoa1 = new login();
         pessoa1.cadastro();
         validador val = new validador();
-        val.cpfval(pessoa1.CPF);
-        val.nomeval(pessoa1.nome);
-        val.numeroval(pessoa1.telefone);
+        val.cpfval(pessoa1.getCPF());
+        val.nomeval(pessoa1.getNome());
+        val.numeroval(pessoa1.getTelefone());
         pessoa1.status();
 
 

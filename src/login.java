@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class login {
-   protected String CPF;
-   protected String nome;
-   protected String telefone;
+   private String CPF;
+   private String nome;
+   private String telefone;
    public void cadastro(){
         Scanner entrada = new Scanner(System.in);
         System.out.println("digite o seu CPF sem pontuação e espaçamento:");
@@ -21,5 +21,15 @@ public class login {
         System.out.println(""+this.telefone);
 
     }
+    public String getCPF(){
+       return this.CPF;
+    }
+    public String getNome(){
+        return this.nome;
+    }
+    public String getTelefone(){
+        return this.telefone;
+    }
+
 
 }

@@ -4,6 +4,7 @@ public class validador {
         int mult = 11;
         int verificador = 0;
         int resultado2 = 0;
+        if(CPF.length() == 11){
 
 
         int[] CPFnum = new int[11];
@@ -11,7 +12,7 @@ public class validador {
             CPFnum[i] = CPF.charAt(i) - '0';
         }
 
-        if(CPFnum.length == 11) {
+
 
 
             for (int x = 0; x < 9; x++) {
@@ -54,8 +55,9 @@ public class validador {
             } else {
                 System.out.println("Cpf invalido");
             }
-        }else{
-            System.out.println("Cpf invalido ");
+
+        } else{
+            CPF = "CPF invalido";
         }
 
 
